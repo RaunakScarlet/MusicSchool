@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 const transition = {
     type: "spring",
@@ -70,7 +69,7 @@ export const Menu = ({
     return (
         <nav
             onMouseLeave={() => setActive(null)} // resets the state
-            className=" mx-auto w-[60%] relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+            className=" mx-auto w-[80%] relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
         >
             {children}
         </nav>
